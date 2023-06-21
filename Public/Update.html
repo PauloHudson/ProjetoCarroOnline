@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update.css">
+    <script src="https://kit.fontawesome.com/bbbf50ffaf.js" crossorigin="anonymous"></script>
+    <title>Update</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li> <a href="/"> Login </a> </li>
+            <li> <a href="/listagem"> ListarCarros </a> </li>
+            <li> <a href="/update"> Atualizar </a> </li>
+            <li> <a href="/remove"> Remover </a> </li>
+            <li> <a href="/add"> Adicionar </a> </li>
+        </ul> 
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="image">
+                <div class="shape-abstract"></div>
+                <img src="./img/mercedespng.png" class="mercedes">
+            </div>
+            <div class="FirstText">
+                <div class="shadowFirst"></div>
+                <h1> Atualizar Veículos</h1>
+                <hr class="orange">
+            </div>
+            <div class="topIP">
+                <form action="/atualizar" method="POST" class="form">
+                    <i class="fa-solid fa-car" id="teste"> </i> 
+                    <i class="fa-solid fa-arrow-up-wide-short" id="teste2"> </i> 
+                    <i class="fa-solid fa-calendar-days" id="teste3"> </i> 
+                    <input type="text" name="Model" placeholder="Modelo" class="option">
+                    <input type="text" name="Quantity" placeholder="Quantidade: " class="option">
+                    <input type="Text" name="Date" placeholder="Ano" class="option">
+                    <button type="submit" class="botao">Atualizar </button>
+                </form>
+            </div>
+            <div class="buttons">
+                <a href="/add" class="abuttons"> Adicionar</a>
+                <a href="/remove" class="abuttons"> Remover</a>
+            </div>
+            <p id="online"> OnlineCar.com</p>
+
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="car.css">
+    <script src="https://kit.fontawesome.com/bbbf50ffaf.js" crossorigin="anonymous"></script>
+    <title>ADD</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li> <a href="/"> Login </a> </li>
+            <li> <a href="/listagem"> ListarCarros </a> </li>
+            <li> <a href="/update"> Atualizar </a> </li>
+            <li> <a href="/remove"> Remover </a> </li>
+            <li> <a href="/add"> Adicionar </a> </li>
+        </ul> 
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="image">
+                <div class="shape-abstract"></div>
+                <img src="./img/mercedespng.png" class="mercedes">
+            </div>
+            <div class="FirstText">
+                <div class="shadowFirst"></div>
+                <h1> Adicionar Veículo</h1>
+                <hr class="orange">
+            </div>
+            <div class="topIP">
+                <form action="/adicionar" method="POST" class="form">
+                    <i class="fa-solid fa-car" id="teste"> </i> 
+                    <i class="fa-solid fa-gears" id="teste1"> </i> 
+                    <i class="fa-solid fa-arrow-up-wide-short" id="teste2"> </i> 
+                    <i class="fa-solid fa-calendar-days" id="teste3"> </i> 
+                    <input type="text" name="Model" placeholder="Modelo" class="option">
+                    <input type="text" name="Fabricante" placeholder="Fabricante" class="option">
+                    <input type="text" name="Quantity" placeholder="Quantidade: " class="option">
+                    <input type="Text" name="Date" placeholder="Ano" class="option">
+                    <button type="submit" class="botao">Adicionar </button>
+                </form>
+            </div>
+            <div class="buttons">
+                <a href="/remove" class="abuttons"> Remove</a>
+                <a href="/update" class="abuttons"> Update</a>
+            </div>
+            <p id="online"> OnlineCar.com</p>
+
+    </main>
+    
+</body>
+</html>

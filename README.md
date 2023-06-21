@@ -1,0 +1,2 @@
+# ProjetoCarroOnline
+ Venho compartilhar esse projeto que fiz para o curso de desenvolvimento web. Seu propósito, apesar de simples, me fez aprender muito. A atividade em si consistia na criação de um site que tivesse uma página de login, um cadastro e uma simulação de um sistema de carros, onde poderíamos adicionar, remover, atualizar e listar os mesmos. Para isso, utilizei HTML, CSS, EJS, JavaScript e o MongoDB.

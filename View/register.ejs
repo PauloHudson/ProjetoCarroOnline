@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Public/index.css">
+    <script src="https://kit.fontawesome.com/bbbf50ffaf.js" crossorigin="anonymous"></script>
+    <title>RegisterPage</title>
+</head>
+<style>
+    body {
+    position: relative;
+    background-image: url("./img/style2.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 29, 124, 0.219);
+    z-index: -1;
+}
+.background{
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: rgba(29, 33, 70, 0.541);
+    border-radius: 40px;
+    margin: 100px auto;
+    box-shadow: 7px 10px 12px 0px rgba(0, 0, 0, 0.324);
+    
+}
+.round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 7px 10px 12px 0px rgba(0, 0, 0, 0.151);
+}
+#users{
+    color: #32aa9c;
+    font-size: 40px;
+}
+.secondWidth{
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+form{
+    outline: none;
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    /*  */
+}
+.options{
+    color: white;
+    margin: 20px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+}
+
+.options::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+    
+}
+.botao{
+    cursor: pointer;
+    box-shadow: 7px 10px 12px 0px rgba(0, 0, 0, 0.151);
+    background-image: linear-gradient(160deg, #25668b 0%, #65b1a8 80%);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: 40px;
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+    border: none;
+}
+.botao:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+}
+.logar{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    top: 150px;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.logar:hover{
+    opacity: 0.8;
+}
+
+</style>
+<body>
+    <main class="background">
+
+        <div class="secondWidth">
+
+            <div class="round">
+                <i class="fa-solid fa-user" id="users"></i>
+            </div>
+            <form action="/cadastrar" method="POST">
+                <input name="username" type="text"     placeholder="Username"   class="options">
+                <input name="email"    type="email"    placeholder="Email"      class="options">
+                <input name="password" type="password" placeholder="Password"   class="options">
+
+                <button type="submit" class="botao"> Register </button>
+            </form>
+            
+        </div>
+        <a href="http://localhost:2000/" class="logar"> Logar</a>
+    </main>
+       
+    
+
+</body>
+</html>
