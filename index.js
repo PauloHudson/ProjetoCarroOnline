@@ -34,7 +34,7 @@ app.get('/update', (req,res)=>{
 })
 
 //Conectar ao Mongo
-const uri = "mongodb+srv://Paulohudson:789paulo@cluster0.lsgbirw.mongodb.net/Users?retryWrites=true&w=majority"
+
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(()=>{
         console.log("Conectado ao MONGO")
